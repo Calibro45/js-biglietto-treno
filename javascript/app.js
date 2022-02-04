@@ -15,6 +15,8 @@ console.log(KM);
 
 // chiedo l'età
 
+const userAge = parseInt ( prompt ("quanti anni hai?") );
+console.log(userAge);
 
 // prezzo biglietto
 //  - prezzo 0.21€ al km
