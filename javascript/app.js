@@ -30,9 +30,23 @@ console.log(TICKETPRICE);
 const TICKETTOT = TICKETPRICE * KM;
 console.log(TICKETTOT);
 
+// prezzo sconto 20%
+
+const firstDiscount = ( TICKETTOT * 20 ) / 100;
+console.log(firstDiscount);
+
+// prezzo sconto 40%
+
+const secondDiscount = ( TICKETTOT * 40 ) / 100;
+console.log(secondDiscount);
+
 //  -SE minorenne <=17 anni
 //      sconto 20%
 //  -ALTRIMENTI SE >= 65 anni
 //      sconto 40%
 //  -ALTRIMENTI 
 //      prezzo intero
+
+if (userAge <= 17) {
+    console.log(firstDiscount);
+}
