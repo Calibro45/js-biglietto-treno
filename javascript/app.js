@@ -9,7 +9,13 @@
 
 
 // chiedo i km da fare
+
+const KM = parseInt( prompt("Quanti km devi percorrere?") );
+console.log(KM);
+
 // chiedo l'età
+
+
 // prezzo biglietto
 //  - prezzo 0.21€ al km
 // calcolo prezzo biglietto
