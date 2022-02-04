@@ -47,12 +47,16 @@ console.log(secondDiscount);
 //  -ALTRIMENTI 
 //      prezzo intero
 
+const userPrice = document.getElementById("ticket_price");
+
 if (userAge <= 17) {
-    console.log((TICKETTOT-firstDiscount).toFixed(2));
+    userPrice.innerHTML += (TICKETTOT-firstDiscount).toFixed(2);
 
 } else if (userAge >= 65) {
-    console.log((TICKETTOT-secondDiscount).toFixed(2));
+    userPrice.innerHTML += (TICKETTOT-secondDiscount).toFixed(2);
 
 } else {
-    console.log(TICKETTOT);
+    userPrice.innerHTML += (TICKETTOT).toFixed(2);
 }
+
+
