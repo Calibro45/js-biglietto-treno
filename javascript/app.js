@@ -49,4 +49,10 @@ console.log(secondDiscount);
 
 if (userAge <= 17) {
     console.log(firstDiscount);
+
+} else if (userAge >= 65) {
+    console.log(secondDiscount);
+    
+} else {
+    console.log(TICKETTOT);
 }
