@@ -27,17 +27,17 @@ console.log(TICKETPRICE);
 // calcolo prezzo biglietto
 //  -0.21€ * km
 
-const TICKETTOT = TICKETPRICE * KM;
-console.log(TICKETTOT);
+const TICKET_TOT = TICKETPRICE * KM;
+console.log(TICKET_TOT);
 
 // prezzo sconto 20%
 
-const firstDiscount = (TICKETTOT*20)/100;
+const firstDiscount = (TICKET_TOT*20)/100;
 console.log(firstDiscount);
 
 // prezzo sconto 40%
 
-const secondDiscount = (TICKETTOT*40)/100;
+const secondDiscount = (TICKET_TOT*40)/100;
 console.log(secondDiscount);
 
 //  -SE minorenne <=17 anni
@@ -49,14 +49,14 @@ console.log(secondDiscount);
 
 const userPrice = document.getElementById("ticket_price");
 
-if (userAge <= 17) {
-    userPrice.innerHTML += (TICKETTOT-firstDiscount).toFixed(2);
+if (userAge<=17) {
+    userPrice.innerHTML += (TICKET_TOT-firstDiscount).toFixed(2);
 
-} else if (userAge >= 65) {
-    userPrice.innerHTML += (TICKETTOT-secondDiscount).toFixed(2);
+} else if (userAge>=65) {
+    userPrice.innerHTML += (TICKET_TOT-secondDiscount).toFixed(2);
 
 } else {
-    userPrice.innerHTML += (TICKETTOT).toFixed(2);
+    userPrice.innerHTML += (TICKET_TOT).toFixed(2);
 }
 
 
