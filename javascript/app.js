@@ -8,3 +8,14 @@
 // va applicato uno sconto del 40% per gli over 65.
 
 
+// chiedo i km da fare
+// chiedo l'età
+// prezzo biglietto
+//  - prezzo 0.21€ al km
+// calcolo prezzo biglietto
+//  -SE minorenne <=17 anni
+//      sconto 20%
+//  -ALTRIMENTI SE >= 65 anni
+//      sconto 40%
+//  -ALTRIMENTI 
+//      prezzo intero
