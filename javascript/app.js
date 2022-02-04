@@ -23,8 +23,13 @@ console.log(userAge);
 
 const TICKETPRICE = Number("0.21");
 console.log(TICKETPRICE);
+
 // calcolo prezzo biglietto
 //  -0.21€ * km
+
+const TICKETTOT = TICKETPRICE * KM;
+console.log(TICKETTOT);
+
 //  -SE minorenne <=17 anni
 //      sconto 20%
 //  -ALTRIMENTI SE >= 65 anni
